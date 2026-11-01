@@ -63,7 +63,7 @@ The student supplied successful push output for these tags:
 - <https://hub.docker.com/r/adityakittad/docker-assignment-backend>
 - <https://hub.docker.com/r/adityakittad/docker-assignment-frontend>
 
-The GitHub repository has not yet been pushed. The intended URL is <https://github.com/adityakittad/dockerized-flask-assignment>; create the repository and push the local `main` branch before submission.
+The source is pushed to the public `main` branch: <https://github.com/adityakittad1/dockerized-flask-assignment>.
 
 ## Notes
 
