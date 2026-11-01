@@ -1,0 +1,1 @@
+{"name":"docker-assignment-frontend","version":"1.0.0","private":true,"description":"Express frontend for the Docker full-stack assignment","main":"server.js","scripts":{"start":"node server.js"},"dependencies":{"express":"^4.21.2"}}

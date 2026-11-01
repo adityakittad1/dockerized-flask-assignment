@@ -1,0 +1,39 @@
+services:
+  backend:
+    build: ./backend
+    image: adityakittad/docker-assignment-backend:1.0
+    container_name: assignment-backend
+    environment:
+      PORT: "5000"
+      FRONTEND_ORIGIN: "*"
+    ports:
+      - "5000:5000"
+    networks:
+      - assignment-net
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:5000/health')"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+      start_period: 5s
+
+  frontend:
+    build: ./frontend
+    image: adityakittad/docker-assignment-frontend:1.0
+    container_name: assignment-frontend
+    environment:
+      PORT: "3000"
+      BACKEND_URL: "http://localhost:5000"
+    ports:
+      - "3000:3000"
+    depends_on:
+      backend:
+        condition: service_healthy
+    networks:
+      - assignment-net
+    restart: unless-stopped
+
+networks:
+  assignment-net:
+    driver: bridge
