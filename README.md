@@ -56,6 +56,15 @@ git remote add origin https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPOSITORY.gi
 git push -u origin main
 ```
 
+## Published Docker Hub image tags
+
+The student supplied successful push output for these tags:
+
+- <https://hub.docker.com/r/adityakittad/docker-assignment-backend>
+- <https://hub.docker.com/r/adityakittad/docker-assignment-frontend>
+
+The GitHub repository has not yet been pushed. The intended URL is <https://github.com/adityakittad/dockerized-flask-assignment>; create the repository and push the local `main` branch before submission.
+
 ## Notes
 
 Docker Hub upload and GitHub push require the student's own accounts and credentials. `documentation/Assignment_Report.docx` includes the architecture, commands, explanations, and a genuine screenshot of the successful Compose build and startup. Add screenshots of `docker compose ps`, the successful browser form response, Docker Hub images, and the GitHub repository after completing those steps. The report does not claim that unpublished images or source have been uploaded.
