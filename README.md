@@ -58,4 +58,4 @@ git push -u origin main
 
 ## Notes
 
-Docker Hub upload and GitHub push require the student's own accounts and credentials. `documentation/Assignment_Report.docx` includes the architecture, commands, evidence checklist, and placeholders for screenshots from the student's actual Docker/GitHub runs. Do not represent placeholder evidence as a completed publish.
+Docker Hub upload and GitHub push require the student's own accounts and credentials. `documentation/Assignment_Report.docx` includes the architecture, commands, explanations, and a genuine screenshot of the successful Compose build and startup. Add screenshots of `docker compose ps`, the successful browser form response, Docker Hub images, and the GitHub repository after completing those steps. The report does not claim that unpublished images or source have been uploaded.
